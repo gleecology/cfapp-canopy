@@ -1,0 +1,166 @@
+{
+    "name": "Canopy",
+    "description": "Canopy is an innovative ad unit that earns you revenue with every impression.",
+    "keywords" : [
+        "advertising",
+        "monetization",
+        "ads"
+        ],
+    "version": "0.1.6",
+    "category":"advertising",
+    "contributors": [
+        {
+            "name" : "greg lee coleman",
+            "email" : "apps+canopy@cloudflare.com"
+        }
+    ],
+    "repository" : {
+        "type" : "git",
+        "url" : "https://github.com/gleecology/cfapp-canopy.git"
+     },
+    "main" : "./public/javascripts/canopy.js",
+
+    "account": {
+        "callback_url": "http://173.245.57.134:40420/api/partners/cloudflare/apps/canopy",
+        "user_fields": ["email"]
+    },
+
+    "dependencies" : {
+    },
+    "licenses" : [
+        {
+            "type": "MIT",
+            "url": "http://www.opensource.org/licenses/MIT"
+        }
+    ],
+    "implements" : "AMD",
+    "scripts" : {
+    },
+    "config" : {
+        "assets" : {
+            "logos" : {
+                "200px": "./public/images/canopy_200.png",
+                "132px": "./public/images/canopy_132.png"
+            },
+            "detail_page" : [
+                "./public/images/canopy_screenshot.png"
+            ]
+        },
+        "payment": {},
+        "details": {
+           "Category": "Content Monetization",
+           "Language": "n/a",
+           "Payout": "Impressions served",
+           "Restrictions": "We reserve the right to deny approval or remove access to the from any site with content that in our belief may be deemed negative in nature, illegal or offensive in any way, or as a result of misuse or abuse."
+
+       },
+       "interface": [
+          {
+              "type" : "hidden",
+              "id"   : "LYRM_id",
+              "name" : "[a publisher id will be issued by CloudFlare]",
+              "value": "-1",
+              "domain_request" : true
+              
+          },
+          {
+            "domain_request" : true,
+            "id": "text_only",
+            "name": "Ad Format",
+            "description" : "Choose to display only static ads, or static and video ads",
+            "type": "select",
+            "options": [
+                { 
+                    "label": "Static and Video",
+                    "value": 0
+                },
+                { 
+                    "label": "Static only",
+                    "value": 1,
+                    "selected": true
+                }
+             ] 
+          },
+            
+
+          {
+            "id": "view_ttl",
+            "name": "Slide Out",
+            "description" : "Minimize Slider after a the selected period of time",
+            "type": "select",
+            "options": [
+                { "value": 0,       "label": "Do not minimize",  "selected": "true" },
+                { "value": "45",    "label": "45 seconds" },
+                { "value": "30",    "label": "30 seconds" },
+                { "value": "20",    "label": "20 seconds" }
+             ] 
+          },
+                
+          {
+            "id": "min_resolution",
+            "name": "Minimum Resolution",
+            "description" : "Limit display of the Slider to the following window sizes",
+                    
+            "type": "select",
+            "options": [
+                { "value": 0,           "label": "All window sizes",  "selected": "true" },
+                { "value": "1024x0",    "label": "wider than 1024" },
+                { "value": "1600x0",    "label": "wider than 1600" }
+            ]
+          },
+
+          {
+            "id": "scroll",
+            "name": "Sticky Scroll",
+            "description" : "Allow the Slider to scroll within the browser window with Sticky Scroll",
+            "type": "select",
+            "options": [
+                { "value": 0,       "label": "Off",    "selected": "true" },
+                { "value": 1,       "label": "On" }
+            ]
+          },
+          
+
+          {
+            "id": "ss_view_max_ct",
+            "name": "Impressions per Session",
+            "description" : "Limit the number of impressions shown per session (20 min)",
+            "type": "select",
+            "options": [
+                { 
+                    "label": "No limit",
+                    "value": 0
+                },
+                { "value": 50,  "label": "50 impressions"  },
+                { "value": 25,  "label": "25 impressions", "selected": true  },
+                { "value": 10,  "label": "10 impressions"  },
+                { "value": 5,   "label": "5 impressions"   },
+                { "value": 1,   "label": "1 impressions"   }
+            ] 
+          },
+
+          {
+            "id": "user_pause_ttl",
+            "name": "Visitor Opt-out Period",
+            "description" : "Select the period of time to pause the Slider after it is closed by a visitor",
+            "type": "select",
+            "options": [
+                { 
+                    "label": "Do not pause",
+                    "selected": true,
+                    "value": 0
+                },
+                { "value": 60,      "label": "1 minute" },
+                { "value": 360,     "label": "10 minutes" },
+                { "value": 3600,    "label": "1 hour" },
+                { "value": 14400,   "label": "4 hours" },
+                { "value": 43200,   "label": "12 hours" },
+                { "value": 86400,   "label": "24 hours" },
+                { "value": 259200,  "label": "72 hours" },
+                { "value": 315360000, "label": "Never show again" }
+            ] 
+          }
+        ]
+    }
+}
+
