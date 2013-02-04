@@ -1,23 +1,8 @@
 {
     "name": "Canopy",
     "description": "Canopy is an innovative ad unit that earns you revenue with every impression.",
-    "keywords" : [
-        "advertising",
-        "monetization",
-        "ads"
-        ],
     "version": "0.0.1",
     "category":"advertising",
-    "contributors": [
-        {
-            "name" : "greg lee coleman",
-            "email" : "apps+canopy@cloudflare.com"
-        }
-    ],
-    "repository" : {
-        "type" : "git",
-        "url" : "https://github.com/gleecology/cfapp-canopy.git"
-     },
     "main" : "./public/javascripts/canopy.js",
 
     "account": {
@@ -25,17 +10,6 @@
         "user_fields": ["email"]
     },
 
-    "dependencies" : {
-    },
-    "licenses" : [
-        {
-            "type": "MIT",
-            "url": "http://www.opensource.org/licenses/MIT"
-        }
-    ],
-    "implements" : "AMD",
-    "scripts" : {
-    },
     "config" : {
         "assets" : {
             "logos" : {
@@ -46,7 +20,6 @@
                 "./public/images/canopy_screenshot.png"
             ]
         },
-        "payment": {},
         "details": {
            "Category": "Content Monetization",
            "Language": "n/a",
@@ -81,8 +54,6 @@
                 }
              ] 
           },
-            
-
           {
             "id": "view_ttl",
             "name": "Slide Out",
