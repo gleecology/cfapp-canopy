@@ -6,7 +6,7 @@
         "monetization",
         "ads"
         ],
-    "version": "0.1.6",
+    "version": "0.0.1",
     "category":"advertising",
     "contributors": [
         {
@@ -86,7 +86,7 @@
           {
             "id": "view_ttl",
             "name": "Slide Out",
-            "description" : "Minimize Slider after a the selected period of time",
+            "description" : "Minimize Canopy after a the selected period of time",
             "type": "select",
             "options": [
                 { "value": 0,       "label": "Do not minimize",  "selected": "true" },
@@ -99,7 +99,7 @@
           {
             "id": "min_resolution",
             "name": "Minimum Resolution",
-            "description" : "Limit display of the Slider to the following window sizes",
+            "description" : "Limit display of Canopy to the following window sizes",
                     
             "type": "select",
             "options": [
@@ -112,7 +112,7 @@
           {
             "id": "scroll",
             "name": "Sticky Scroll",
-            "description" : "Allow the Slider to scroll within the browser window with Sticky Scroll",
+            "description" : "Allow Canopy to scroll within the browser window with Sticky Scroll",
             "type": "select",
             "options": [
                 { "value": 0,       "label": "Off",    "selected": "true" },
@@ -142,7 +142,7 @@
           {
             "id": "user_pause_ttl",
             "name": "Visitor Opt-out Period",
-            "description" : "Select the period of time to pause the Slider after it is closed by a visitor",
+            "description" : "Select the period of time to pause Canopy after it is closed by a visitor",
             "type": "select",
             "options": [
                 { 
