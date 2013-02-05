@@ -17,7 +17,7 @@
                 "132px": "./public/images/canopy_132.png"
             },
             "detail_page" : [
-                "./public/images/canopy_screenshot.png"
+                "./public/images/canopy_interstial.png"
             ]
         },
         "details": {
@@ -36,101 +36,6 @@
               "domain_request" : true
               
           },
-          {
-            "domain_request" : true,
-            "id": "text_only",
-            "name": "Ad Format",
-            "description" : "Choose to display only static ads, or static and video ads",
-            "type": "select",
-            "options": [
-                { 
-                    "label": "Static and Video",
-                    "value": 0
-                },
-                { 
-                    "label": "Static only",
-                    "value": 1,
-                    "selected": true
-                }
-             ] 
-          },
-          {
-            "id": "view_ttl",
-            "name": "Slide Out",
-            "description" : "Minimize Canopy after a the selected period of time",
-            "type": "select",
-            "options": [
-                { "value": 0,       "label": "Do not minimize",  "selected": "true" },
-                { "value": "45",    "label": "45 seconds" },
-                { "value": "30",    "label": "30 seconds" },
-                { "value": "20",    "label": "20 seconds" }
-             ] 
-          },
-                
-          {
-            "id": "min_resolution",
-            "name": "Minimum Resolution",
-            "description" : "Limit display of Canopy to the following window sizes",
-                    
-            "type": "select",
-            "options": [
-                { "value": 0,           "label": "All window sizes",  "selected": "true" },
-                { "value": "1024x0",    "label": "wider than 1024" },
-                { "value": "1600x0",    "label": "wider than 1600" }
-            ]
-          },
-
-          {
-            "id": "scroll",
-            "name": "Sticky Scroll",
-            "description" : "Allow Canopy to scroll within the browser window with Sticky Scroll",
-            "type": "select",
-            "options": [
-                { "value": 0,       "label": "Off",    "selected": "true" },
-                { "value": 1,       "label": "On" }
-            ]
-          },
-          
-
-          {
-            "id": "ss_view_max_ct",
-            "name": "Impressions per Session",
-            "description" : "Limit the number of impressions shown per session (20 min)",
-            "type": "select",
-            "options": [
-                { 
-                    "label": "No limit",
-                    "value": 0
-                },
-                { "value": 50,  "label": "50 impressions"  },
-                { "value": 25,  "label": "25 impressions", "selected": true  },
-                { "value": 10,  "label": "10 impressions"  },
-                { "value": 5,   "label": "5 impressions"   },
-                { "value": 1,   "label": "1 impressions"   }
-            ] 
-          },
-
-          {
-            "id": "user_pause_ttl",
-            "name": "Visitor Opt-out Period",
-            "description" : "Select the period of time to pause Canopy after it is closed by a visitor",
-            "type": "select",
-            "options": [
-                { 
-                    "label": "Do not pause",
-                    "selected": true,
-                    "value": 0
-                },
-                { "value": 60,      "label": "1 minute" },
-                { "value": 360,     "label": "10 minutes" },
-                { "value": 3600,    "label": "1 hour" },
-                { "value": 14400,   "label": "4 hours" },
-                { "value": 43200,   "label": "12 hours" },
-                { "value": 86400,   "label": "24 hours" },
-                { "value": 259200,  "label": "72 hours" },
-                { "value": 315360000, "label": "Never show again" }
-            ] 
-          }
         ]
     }
 }
