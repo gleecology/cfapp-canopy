@@ -30,7 +30,7 @@
        "interface": [
           {
               "type" : "hidden",
-              "id"   : "LYRM_id",
+              "id"   : "publisher_id",
               "name" : "[a publisher id will be issued by CloudFlare]",
               "value": "-1",
               "domain_request" : true
