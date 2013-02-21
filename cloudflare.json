@@ -1,7 +1,7 @@
 {
     "name": "Canopy",
     "description": "Canopy is an innovative ad unit that earns you revenue with every impression.",
-    "version": "0.0.1",
+    "version": "0.0.2",
     "category":"advertising",
     "main" : "./public/javascripts/canopy.js",
 
@@ -26,17 +26,7 @@
            "Payout": "Impressions served",
            "Restrictions": "We reserve the right to deny approval or remove access to the from any site with content that in our belief may be deemed negative in nature, illegal or offensive in any way, or as a result of misuse or abuse."
 
-       },
-       "interface": [
-          {
-              "type" : "hidden",
-              "id"   : "publisher_id",
-              "name" : "[a publisher id will be issued by CloudFlare]",
-              "value": "-1",
-              "domain_request" : true
-              
-          }
-        ]
+       }
     }
 }
 
