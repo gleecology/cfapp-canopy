@@ -5,8 +5,8 @@ CloudFlare.define( 'canopy', [      'canopy/config',   'cloudflare/jquery1.7' ],
         $       = jQuery;
 
     cfg         = cfg || {};
-    cfg.crid    =  cfg.crid ||  '537005147';    // adtype
-    cfg.cid     =  cfg.publisher_id || '8CUR5F7GW';     // pub id
+    cfg.crid    =  cfg.publisher_id ||  '537005147';    // pub id
+    cfg.cid     =  cfg.cid || '8CUR5F7GW';              // adtype 
     cfg.size    = '641x481';
 
     $(document).ready( function(){
