@@ -1,8 +1,8 @@
 {
     "name": "Canopy",
     "description": "Canopy is an innovative ad unit that earns you revenue with every impression.",
-    "version": "0.0.4",
-    "category":"advertising",
+    "version": "0.0.5",
+    "category":"monetization",
     "main" : "./public/javascripts/canopy.js",
 
     "account": {
